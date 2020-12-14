@@ -1,0 +1,26 @@
+<h4 class="text-center">Address-List</h4>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Address</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Zip</th>
+            <th>Phone-No</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let Address of Addresses">
+            <td>{{Address.id}}</td>
+            <td>{{Address.full_name}}</td>
+            <td>{{Address.address}}</td>
+            <td>{{Address.state}}</td>
+            <td>{{Address.city}}</td>
+            <td>{{Address.zip}}</td>
+            <td>{{Address.phone_no}}</td>
+        </tr>
+    </tbody>
+</table>
