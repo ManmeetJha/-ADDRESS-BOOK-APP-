@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { AddressListComponent } from './address-list/address-list.component';
 import { CreateAddressComponent } from './create-address/create-address.component';
 import { from } from 'rxjs';
+import { UpdateAddressComponent } from './update-address/update-address.component';
+import { DeleteAddressComponent } from './delete-address/delete-address.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddressListComponent,
-    CreateAddressComponent
+    CreateAddressComponent,
+    UpdateAddressComponent,
+    DeleteAddressComponent
   ],
   imports: [
     BrowserModule,

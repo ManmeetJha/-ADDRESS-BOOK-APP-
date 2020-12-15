@@ -1,4 +1,4 @@
-<h4 class="text-center">Address-List</h4>
+
 <table class="table table-striped">
     <thead>
         <tr>
@@ -9,6 +9,7 @@
             <th>City</th>
             <th>Zip</th>
             <th>Phone-No</th>
+            <th>Actions</th>
         </tr>
     </thead>
 
@@ -21,6 +22,12 @@
             <td>{{Address.city}}</td>
             <td>{{Address.zip}}</td>
             <td>{{Address.phone_no}}</td>
+            <td>
+                <button (click)="updateAddress(Address.id)" class="btn btn-info">UPDATE</button>
+            </td>
+            <td>
+                <button (click)="deleteAddress(Address.id)" class="btn btn-danger">DELETE</button>
+            </td>
         </tr>
     </tbody>
 </table>
